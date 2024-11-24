@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thi Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">Thi Online</div>
+            <div>
+                <button>Đăng nhập</button>
+                <button>Đăng ký</button>
+            </div>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm đề thi">
+    <button>Tìm kiếm</button>
+        </div>
+        <div class="layout">
+            <div class="filters">
+                <div class="filter-group">
+                    <h3>Môn học</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">Toán</div>
+                        <div class="filter-option">Lý</div>
+                        <div class="filter-option">Sinh</div>
+                        <div class="filter-option">Anh</div>
+                        <div class="filter-option">Hóa</div>
+                        <div class="filter-option">Văn</div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Thành phố</h3>
+                    <input type="text" placeholder="Thành phố">
+                </div>
+
+                <div class="filter-group">
+                    <h3>Phân loại</h3>
+                    <div class="filter-options">
+                        <div class="filter-option">Thi giữa kì 1</div>
+                        <div class="filter-option">Thi cuối kì 1</div>
+                        <div class="filter-option">Thi giữa kì 2</div>
+                        <div class="filter-option">Thi cuối kì 2</div>
+                        <div class="filter-option">Tốt nghiệp THPT</div>
+                        <div class="filter-option">ĐGNL HSA</div>
+                        <div class="filter-option">ĐGNL APT</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results">
+                <h2 id="result-count">0 kết quả</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+        const filterOptions = document.querySelectorAll('.filter-option');
+        filterOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                option.classList.toggle('active');
+            });
+        });
+        const searchInput = document.getElementById('search-input');
+        const resultCount = document.getElementById('result-count');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.trim();
+            if (query === "") {
+                resultCount.textContent = "0 kết quả";
+            } else {
+                resultCount.textContent = "10 kết quả tìm kiếm cho: " + query;
+            }
+        });
+    </script>
+</body>
+</html>

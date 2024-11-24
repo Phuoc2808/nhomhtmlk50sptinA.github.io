@@ -1,0 +1,393 @@
+
+.body
+{
+    background-color: ghostwhite;
+    margin: 0px;
+}
+.line
+{
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.67);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 57px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.line-ul
+{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    line-height: 75px;
+    font-size: 10px;
+    list-style: none;
+    width: 50px;
+    height: 57px;
+}
+.search-container 
+{
+    margin: 10px 0px 0px 10px;
+    height: 40px;
+    width: 200px;
+    position: relative;
+}
+.search-input 
+{
+    position: absolute;
+
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.search-icon 
+{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #777;
+}
+.line-ul li img
+{
+    transition: transform 0.3s ease;
+}
+.line-ul li img:hover
+{
+    transform: scale(1.2);
+}
+
+.boxleft
+{
+    margin-top: 57px;
+    height: 970px;
+    width: 265px;
+    float: left;
+}
+.dangnhap
+{
+    height: 50px;
+    width: 200px;
+    padding-top: 1px;
+    padding-top: 10px;
+}
+.dangnhap:hover
+{
+    height: 50px;
+    width: 100%;
+    padding-top: 1px;
+    padding-top: 10px;
+    background-color:rgba(196, 196, 196, 0.5);
+    border-radius: 10px;
+}
+.banner-container 
+{
+    width: 100%;
+    max-width: 800px;
+    height: 225px;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-images 
+{
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.banner-images img 
+{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.dots 
+{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dots button 
+{
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.dots button.active 
+{
+    background-color: #333;
+}
+.box3
+{
+    width: 800px;
+    height: 160px;
+    margin: 10px 65px 10px 60px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 21px 1px 1px 1px;
+}
+.box3-conten
+{
+    margin: 10px 5px 5px 5px;
+    padding-top: 5px;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    color: rgb(34, 124, 203);
+    border-radius: 10px;
+    background-color: rgba(236, 236, 236, 0.5);
+    box-shadow: 0 .8px 1px 0 rgba(0, 0, 0, .1);
+}
+.box4
+{
+    padding: 10px 10px 0px 10px;
+    width: 780px;
+    height: 230px;
+    margin: 10px 65px 10px 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+.scroll-container 
+{
+    width: 730px;
+    height: 200px;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 0px;
+}
+
+.scroll-container li 
+{
+    height: 160px;
+    width: 120px;
+    display: inline-block; 
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-container::-webkit-scrollbar 
+{
+    height: 8px; 
+}
+.scroll-container::-webkit-scrollbar-button {
+    display: none; 
+}
+
+        
+.scroll-container::-webkit-scrollbar-track 
+{
+    background: #f1f1f1; 
+}
+.scroll-container::-webkit-scrollbar-thumb 
+{
+    background: #888; 
+    border-radius: 10px; 
+}
+.scroll-container::-webkit-scrollbar-thumb:hover 
+{
+    background: #555; 
+}
+.box4-text
+{
+    text-align: center;
+    color: white;
+}
+.box5
+{
+    width: 780px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px 65px 10px 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+.scroll-container1 {
+    width: 100%;
+    max-width: 750px;
+    height: 160px;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+
+.scroll-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.scroll-item {
+    flex-shrink: 0;
+    width: 160px;
+    height: 160px;
+    background-color: #eee;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-item:hover {
+    background-color: #ddd;
+}
+
+.scroll-btn-container {
+    top: 10px; 
+    right: 10px;
+    gap: 5px;
+    z-index: 10;
+}
+
+.scroll-btn {
+    background-color: white;
+    color: #295779;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.boxright
+{
+    margin-top: 67px;
+    height: 960px;
+    width: 320px;
+    background-color: ghostwhite;
+    float: right;
+}
+.ds-right 
+{
+    width: 267px;
+    height: 300px;
+    overflow-y: hidden; 
+    border-radius: 8px;
+    background-color: ghostwhite;
+    padding: 10px;
+    transition: overflow 0.3s ease; 
+}
+
+
+.ds-right:hover 
+{
+    overflow-y: auto; 
+}
+
+.ds-right::-webkit-scrollbar 
+{
+    width: 8px;
+}
+
+.ds-right::-webkit-scrollbar-thumb
+{
+    background: #888; 
+    border-radius: 4px; 
+}
+
+.ds-right::-webkit-scrollbar-thumb:hover 
+{
+    background: #555; 
+}
+
+.ds-right::-webkit-scrollbar-track 
+{
+    background: ghostwhite; 
+}
+
+.ds-right ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ds-right li 
+{
+    height: 65px;
+    width: 267px;
+    margin-bottom: 5px;
+    background-color: #eaeaea;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    color: rgb(22, 95, 156);
+}
+.box-bottom
+{
+    height: 250px;
+    background-color: rgb(22, 95, 156);
+    padding: 35px 100px 75px 100px ;
+}
+.box-bottom-ul
+{
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.gmail 
+{
+    margin-top: 10px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gmail input 
+{
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+.gmail button 
+{
+    background-color: rgb(22, 95, 156);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.gmail button i 
+{
+    color: white;
+    font-size: 18px;
+}
